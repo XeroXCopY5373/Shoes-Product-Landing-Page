@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, san-serif;
+    background: linear-gradient(90deg, #e2eff9, #cce4f5, #b5d8f0);
+    font-size: 18px;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #231f20;
+    width: 100%;
+  }
+
+
+  #header ul {
+    list-style: none;
+  }
+  
+  #header ul li {
+    float: left;
+    padding: 20px;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    font-size: 20px;
+    color: #cfd3d7;
+  }
+  
+  #header-img {
+    width: 111px;
+  }
+  
+.container {
+    padding-top: 50px;
+}
+
+  form {
+    width: 35%;
+  }
+  
+  #home {
+    background-color: #f0fcfb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  #home #email {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  #home #submit {
+    width: 50%;
+    margin: 10px 0 0 25%;
+    border: none;
+    color: white;
+    background-color: #0ace5c;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #home #submit:hover {
+    cursor: pointer;
+    background-color: #90e788;
+  }
+  
+  #home h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #home iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+#products .products {
+    margin: 20px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    height: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+  
+#products .products h2 {
+    border-bottom: 1px solid gray;
+}
+
+#products .products input {
+    border: none;
+    width: 50%;
+    height: 23px;
+    background-color: #0ace5c;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#products .products input:hover {
+    cursor: pointer;
+    background-color: #90e788;
+}
+
+#about-us {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f0fcfb;
+}
+
+#about-us .description{
+    width: 50%;
+
+}
+
+#about-us img {
+    width: 500px;
+    height: 350px;
+    margin: auto 0;
+}
+
+footer {
+    background-color: #231f20;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.footer-icons a{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: #231f20;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    background-color: #b5d8f0;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    float: left;
+    padding: 10px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    font-size: 20px;
+    color: #cfd3d7;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+
+    .footer-nav ul, header, #home, #products, #about-us {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li a, .footer-bottom, .nav-link {
+        font-size: 16px;
+    }
+
+    #home form {
+        width: 300px;
+    }
+
+    #home #email {
+        margin: 50px 0 5px 0;
+        text-align: center;
+    }
+
+    #home iframe {
+        width: 400px;
+        height: 269px;
+    }
+
+    #about-us {
+        gap: 0;
+    }
+
+    #about-us .description {
+        width: 95%;
+        text-align: center;
+    }
+
+    #about-us img {
+        width: 400px;
+        height: 300px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+
+    .nav-link, .footer-bottom, .footer-nav ul li a {
+        font-size: 12px;
+        margin-left: 1px;
+    }
+
+    .nav-link:hover, .footer-bottom, .footer-nav ul li a:hover {
+        font-size: 13px;
+    }
+
+    #home iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+    #about-us, #products, #home {
+        width: 90%;
+        font-size: 15px;
+        
+    }
+}
